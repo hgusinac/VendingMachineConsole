@@ -12,11 +12,12 @@ namespace VendingMachineConsole.Data
     {
         private int moneyPool = 0;
         private readonly int[] denominations = new int[] { 1, 5, 10, 20, 50, 100, 500, 1000 };
-        List<Product> products = new List<Product>();
+       public  List<Product> products = new List<Product>();
 
         public VendingMachine()
         {
             Additems();
+            
         }
         public Product Purchase(int productId)
         {
@@ -43,12 +44,20 @@ namespace VendingMachineConsole.Data
         }
         public List<Product> ShowAll()// ändra produkterna till en sb som retunerar en string. 
         {
-            foreach (var item in products)
-            {
+            StringBuilder sb = new StringBuilder();
 
+
+            foreach (Product product in products)
+            {
+                sb.Append(product).ToString();
             }
+            return products;
+
+
 
         }
+
+
         public bool InsertMoney(int money)
         {
             if (denominations.Contains(money))

@@ -10,7 +10,7 @@
         }
         public override string Examine()
         {
-            return ($"Sandwich , {price:C} :{id} :{lchf} ");
+            return ($"Sandwich , {price:C} {id} {lchf} ");
         }
         public override string Use()
         {

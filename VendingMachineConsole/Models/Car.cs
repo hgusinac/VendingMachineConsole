@@ -10,7 +10,7 @@ namespace VendingMachineConsole
         }
         public override string Examine()
         {
-            return ($"Car , {price:C}");
+            return ($"Car , {price:C} {id} {diesel}");
         }
         public override string Use()
         {
