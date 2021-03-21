@@ -11,14 +11,16 @@ namespace VendingMachineConsol.Tests
         {
 
             //Arrange
-            VendingMachine vendingMachine = new VendingMachine();
-            
+            VendingMachine vm = new VendingMachine();
+            int moneyPool = 200;
             
             //Act
-           vendingMachine.InsertMoney(100);
+           vm.InsertMoney(100);
+            vm.InsertMoney(100);
 
             //Assert
-            Assert.Equal(100, 100);
+            Assert.Equal(200, moneyPool);
         }
+
     }
 }

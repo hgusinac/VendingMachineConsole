@@ -13,8 +13,7 @@
 
         }
 
-
-
+       
         public abstract string Examine();
         public abstract string Use();
 

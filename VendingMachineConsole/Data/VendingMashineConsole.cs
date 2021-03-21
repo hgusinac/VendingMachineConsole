@@ -44,17 +44,8 @@ namespace VendingMachineConsole.Data
         }
         public List<Product> ShowAll()// ändra produkterna till en sb som retunerar en string. 
         {
-            StringBuilder sb = new StringBuilder();
-
-
-            foreach (Product product in products)
-            {
-                sb.Append(product).ToString();
-            }
             return products;
-
-
-
+           
         }
 
 

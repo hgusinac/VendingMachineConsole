@@ -10,8 +10,8 @@ namespace VendingMachineConsole
             VendingMachine vendingMachine = new VendingMachine();
 
             Console.WriteLine(vendingMachine.ShowAll());
-            Console.WriteLine(vendingMachine.InsertMoney(1000));
-            Console.WriteLine(vendingMachine.Purchase(1).Use());
+            Console.WriteLine(vendingMachine.InsertMoney(500));
+            Console.WriteLine(vendingMachine.Purchase(3).Use());
             Console.WriteLine(vendingMachine.EndTransaction());
         }
     }
