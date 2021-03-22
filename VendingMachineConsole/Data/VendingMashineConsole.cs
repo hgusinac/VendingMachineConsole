@@ -42,10 +42,17 @@ namespace VendingMachineConsole.Data
             }
             return null;
         }
-        public List<Product> ShowAll()// ändra produkterna till en sb som retunerar en string. 
+        public string ShowAll()// ändra produkterna till en sb som retunerar en string. 
         {
-            return products;
-           
+          string list = "";
+
+            for (int i = 0; i < products.Count; i++)
+            {
+                list += $"{i + 1}, {products[i].Examine()}\n";
+            }
+
+            return list;
+
         }
 
 

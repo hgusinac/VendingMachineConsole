@@ -8,7 +8,7 @@ namespace VendingMachineConsole
     {
         public Product Purchase(int productId);
 
-        public List<Product> ShowAll();
+        public string ShowAll();
 
         public bool InsertMoney(int money);
 
